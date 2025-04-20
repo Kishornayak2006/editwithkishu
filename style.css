@@ -1,51 +1,70 @@
+/* Basic Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
-  background: #f4f4f4;
-  color: #333;
+  background-color: #f4f4f4;
 }
 
-header {
-  background: #111;
-  color: #fff;
-  padding: 1rem;
+.container {
   text-align: center;
-}
-
-nav a {
-  margin: 0 10px;
-  color: #fff;
-  text-decoration: none;
-}
-
-.hero {
-  padding: 2rem;
-  text-align: center;
-  background: #ffd700;
-}
-
-.cta {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 10px 20px;
-  background: #111;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-section {
-  padding: 2rem;
-  background: #fff;
-  margin: 1rem auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
   max-width: 800px;
+  margin: 20px auto;
 }
 
-footer {
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Banner Styles */
+.banner {
+  background: linear-gradient(45deg, #ff6b6b, #f4a261);
+  color: white;
+  padding: 60px 20px;
   text-align: center;
-  padding: 1rem;
-  background: #222;
-  color: #fff;
+}
+
+.banner h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.banner p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Services Styles */
+.services ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.services li {
+  margin: 20px 0;
+}
+
+.file-upload {
+  margin-top: 10px;
+}
+
+/* Hide file upload sections initially */
+.file-upload input {
+  padding: 10px;
+  font-size: 16px;
 }
