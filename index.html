@@ -3,51 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Get Started</title>
+  <title>Get Start</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Colorful Banner -->
   <header class="banner">
-    <h1>EDIT WITH KISHU</h1>
+    <h1> EDIT WITH KISHU </h1>
     <p>Welcome to Our Photo & Video Editing Services . Transform Your Media with Professional Touch</p>
   </header>
 
   <div class="container">
     <!-- Get Started Button -->
-    <button id="getStartedBtn">Get Started</button>
+    <button id="getStartedBtn">Get Start</button>
     
     <!-- Services List (Initially hidden) -->
     <div id="services" class="services" style="display: none;">
       <h2>Choose a Service</h2>
       <ul>
+        <!-- Photo Editing Service -->
         <li>
           <button class="serviceBtn" data-service="photo-editing">Photo Editing</button>
           <div class="file-upload" id="photo-editing" style="display: none;">
-            <label for="photoFile">Upload Your Photo:</label>
-            <input type="file" id="photoFile" name="photoFile">
+            <!-- Formspree Form for Photo Upload -->
+            <form action="https://formspree.io/f/your_form_id" method="POST" enctype="multipart/form-data">
+              <label for="photoFile">Upload Your Photo:</label>
+              <input type="file" id="photoFile" name="file" required>
+              <button type="submit">Submit Photo</button>
+            </form>
           </div>
         </li>
+
+        <!-- Video Editing Service -->
         <li>
           <button class="serviceBtn" data-service="video-editing">Video Editing</button>
           <div class="file-upload" id="video-editing" style="display: none;">
-            <label for="videoFile">Upload Your Video:</label>
-            <input type="file" id="videoFile" name="videoFile">
+            <!-- Formspree Form for Video Upload -->
+            <form action="https://formspree.io/f/your_form_id" method="POST" enctype="multipart/form-data">
+              <label for="videoFile">Upload Your Video:</label>
+              <input type="file" id="videoFile" name="file" required>
+              <button type="submit">Submit Video</button>
+            </form>
           </div>
         </li>
+
+        <!-- Event Editing Service -->
         <li>
           <button class="serviceBtn" data-service="event-editing">Event Editing</button>
           <div class="file-upload" id="event-editing" style="display: none;">
-            <label for="eventFile">Upload Event File:</label>
-            <input type="file" id="eventFile" name="eventFile">
+            <!-- Formspree Form for Event File Upload -->
+            <form action="https://formspree.io/f/your_form_id" method="POST" enctype="multipart/form-data">
+              <label for="eventFile">Upload Event File:</label>
+              <input type="file" id="eventFile" name="file" required>
+              <button type="submit">Submit Event File</button>
+            </form>
           </div>
         </li>
+
+        <!-- Social Media Editing Service -->
         <li>
           <button class="serviceBtn" data-service="social-media">Social Media Post Editing</button>
           <div class="file-upload" id="social-media" style="display: none;">
-            <label for="socialMediaFile">Upload Your Social Media Post:</label>
-            <input type="file" id="socialMediaFile" name="socialMediaFile">
+            <!-- Formspree Form for Social Media Post Upload -->
+            <form action="https://formspree.io/f/your_form_id" method="POST" enctype="multipart/form-data">
+              <label for="socialMediaFile">Upload Social Media Post:</label>
+              <input type="file" id="socialMediaFile" name="file" required>
+              <button type="submit">Submit Post</button>
+            </form>
           </div>
         </li>
       </ul>
