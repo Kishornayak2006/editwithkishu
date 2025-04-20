@@ -3,50 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PixelFix | Photo Editing Services</title>
+  <title>Get Started</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>PixelFix</h1>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
-    </nav>
+
+  <!-- Colorful Banner -->
+  <header class="banner">
+    <h1>Welcome to Our Photo & Video Editing Services</h1>
+    <p>Transform Your Media with Professional Touch</p>
   </header>
 
-  <section class="hero">
-    <h2>Pro Photo Edits. Fast. Affordable.</h2>
-    <p>We edit product photos, portraits, events, social content & more.</p>
-    <a href="#contact" class="cta">Get Started</a>
-  </section>
+  <div class="container">
+    <!-- Get Started Button -->
+    <button id="getStartedBtn">Get Started</button>
+    
+    <!-- Services List (Initially hidden) -->
+    <div id="services" class="services" style="display: none;">
+      <h2>Choose a Service</h2>
+      <ul>
+        <li>
+          <button class="serviceBtn" data-service="photo-editing">Photo Editing</button>
+          <div class="file-upload" id="photo-editing" style="display: none;">
+            <label for="photoFile">Upload Your Photo:</label>
+            <input type="file" id="photoFile" name="photoFile">
+          </div>
+        </li>
+        <li>
+          <button class="serviceBtn" data-service="video-editing">Video Editing</button>
+          <div class="file-upload" id="video-editing" style="display: none;">
+            <label for="videoFile">Upload Your Video:</label>
+            <input type="file" id="videoFile" name="videoFile">
+          </div>
+        </li>
+        <li>
+          <button class="serviceBtn" data-service="event-editing">Event Editing</button>
+          <div class="file-upload" id="event-editing" style="display: none;">
+            <label for="eventFile">Upload Event File:</label>
+            <input type="file" id="eventFile" name="eventFile">
+          </div>
+        </li>
+        <li>
+          <button class="serviceBtn" data-service="social-media">Social Media Post Editing</button>
+          <div class="file-upload" id="social-media" style="display: none;">
+            <label for="socialMediaFile">Upload Your Social Media Post:</label>
+            <input type="file" id="socialMediaFile" name="socialMediaFile">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-  <section id="services">
-    <h3>Our Services</h3>
-    <ul>
-      <li>E-commerce Product Editing</li>
-      <li>Portrait Retouching</li>
-      <li>Event Photo Enhancements</li>
-      <li>Social Media Graphics</li>
-      <li>AI-powered Fun Edits</li>
-    </ul>
-  </section>
-
-  <section id="portfolio">
-    <h3>Portfolio</h3>
-    <p>[Upload your before/after images here]</p>
-  </section>
-
-  <section id="contact">
-    <h3>Contact Us</h3>
-    <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
-    <p>Instagram: @yourhandle</p>
-    <p><a href="https://forms.gle/your-form-link">Upload Your Images</a></p>
-  </section>
-
-  <footer>
-    <p>© 2025 PixelFix. All rights reserved.</p>
-  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
